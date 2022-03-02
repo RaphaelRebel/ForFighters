@@ -31,3 +31,4 @@ Tot nu toe denken wij nog alleen aan de api. Dit is een manier om informatie te 
 ## Documentatie
 
 - [Trello](https://trello.com/b/xPD4qlpC/brazilian-jiu-jiutsu)
+
