@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+/* Connectie naar controller */
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,19 +15,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-$naam  = 'Raphael'
-    return view('welcome', ['naam' => $naam]);
+
+Route::get('/groet/{name}', function ($name) {
+    return view('welcome', ['name' => $name]);
 });
 
-Route::get('/workspace', function (){
-    return view('development');
-});
+Route::get('/', [HomeController::class, 'homepage']);
 
-
+/* Dashboard routes */
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard');
+
+
 
 require __DIR__.'/auth.php';

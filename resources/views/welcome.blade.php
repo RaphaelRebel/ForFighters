@@ -1,3 +1,4 @@
 <x-guest-layout>
-Hallo
+
+    <p>Hallo {{ $name ?? 'Naam' }}</p>
 </x-guest-layout>
