@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+$naam  = 'Raphael'
+    return view('welcome', ['naam' => $naam]);
 });
+
+Route::get('/workspace', function (){
+    return view('development');
+});
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
