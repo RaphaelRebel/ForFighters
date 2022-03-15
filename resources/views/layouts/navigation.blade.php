@@ -22,6 +22,9 @@
                     <x-nav-link :href="route('dashboard-todo-overzicht')" :active="request()->routeIs('dashboard-todo-overzicht')">
                         {{ __('Overzicht') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('dashboard-todo-create')" :active="request()->routeIs('dashboard-todo-create')">
+                        {{ __('Nieuwe todo') }}
+                    </x-nav-link>
                 </div>
             </div>
 

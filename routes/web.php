@@ -26,8 +26,10 @@ Route::get('/dashboard', function () {
 
 Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard-profile');
 
-/*Alle Todo's paginas en functies*/
+/*Alle Todos paginas en functies*/
+
 Route::get('/dashboard/todo', [TodoController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
+Route::get('/dashboard/todo/create', [TodoController::class, 'todocreate'])->middleware(['auth'])->name('dashboard-todo-create');
 
 
 
