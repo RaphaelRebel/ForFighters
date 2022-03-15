@@ -1,16 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Todo;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function showHome(){
-        return 'HOMEPAGE';
-        }
-
-       public function homepage(){
+            public function homepage(){
             return view('development');
         }
+
 }

@@ -19,9 +19,7 @@
     <!-- Als een yield word aangegeven, zoekt het naar een aanpassing in de view pagina, als daar niks gevonden word, vult het niks in-->
     @yield('content')
     <nav>
-        <!-- Navigator -->
-       <div id="btn"> <span class="noselect"> <a href="{{ route('login') }}" class="donation flex">Login</a></span><div id="circle"></div></div>
-      <div id="btn"> <span class="noselect"> <a href="{{ route('register') }}">Aanmelden</a></span><div id="circle"></div></div>
+        @yield('nav')
     </nav>
 </main>
 

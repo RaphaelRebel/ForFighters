@@ -30,6 +30,9 @@ Route::get('/dashboard', function () {
 
 Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard-profile');
 
+/*Alle Todo's paginas en functies*/
+Route::get('/dashboard/todo', [DashboardController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
+
 
 
 require __DIR__.'/auth.php';
