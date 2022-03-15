@@ -19,7 +19,10 @@ module.exports = {
                 medium: 400,
                 bold: 500,
                 heavy: 700
-            }
+            },
+            backgroundImage:  theme =>({
+                'landingspage': "url('/fotos/landingspage.png')",
+            }),
         },
     },
     plugins: [require('@tailwindcss/forms')],
