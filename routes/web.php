@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 /* Connectie naar controller */
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TodoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,12 +16,7 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-
-Route::get('/groet/{name}', function ($name) {
-    return view('welcome', ['name' => $name]);
-});
-
-Route::get('/', [HomeController::class, 'homepage']);
+Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
 
 /* Dashboard routes */
 
@@ -31,7 +27,7 @@ Route::get('/dashboard', function () {
 Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard-profile');
 
 /*Alle Todo's paginas en functies*/
-Route::get('/dashboard/todo', [DashboardController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
+Route::get('/dashboard/todo', [TodoController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
 
 
 

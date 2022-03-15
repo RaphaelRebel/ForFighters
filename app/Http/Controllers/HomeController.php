@@ -9,5 +9,8 @@ class HomeController extends Controller
             public function homepage(){
             return view('development');
         }
+        public function aboutus(){
+               return view('aboutus');
+               }
 
 }

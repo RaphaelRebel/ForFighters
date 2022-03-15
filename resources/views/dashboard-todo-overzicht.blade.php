@@ -4,10 +4,12 @@
             {{ __('Overzicht') }}
         </h2>
     </x-slot>
+    {{ $todos->links() }}
     <ol class="slides">
         @foreach($todos as $todo)
-            <div><p>{{$todo->title}}</p></div>
+            <div><h3>{{$todo->title}}</h3> <p>{{$todo->description}}</p></div>
         @endforeach
     </ol>
-    
+    {{ $todos->links() }}
+
 </x-app-layout>

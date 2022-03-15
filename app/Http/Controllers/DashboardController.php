@@ -9,8 +9,5 @@ class DashboardController extends Controller
     public function profile(){
         return view('dashboard-profile');
     }
-    public function todooverzicht(){
-                    $todos = Todo::all();
-                    return view('dashboard-todo-overzicht', ['todos' => $todos]);
-                }
+
 }
