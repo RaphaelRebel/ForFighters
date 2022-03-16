@@ -7,10 +7,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+
     <!-- Scripts -->
 </head>
 <body>
 <header>
+    @include('layouts.workspace-nav')
     <!-- Als een section word aangegeven, zoekt het eerst naar een aanpassing in de view pagina, als daar niks gevonden word, wordt het veld ingevuld door de inhoud onder section en boven show -->
     @yield('header')
 </header>
@@ -24,6 +26,8 @@
 </main>
 
 <footer>
+
+    @include('layouts.workspace-footer')
 </footer>
 </body>
 </html>
