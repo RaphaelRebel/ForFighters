@@ -1,0 +1,263 @@
+body{
+    font-family: "herculanum", sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../fotos/landingspage-mobile.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-en-buttons > h1{
+    font-family: "herculanum", sans-serif;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+}
+
+.text-en-buttons{
+    margin: 0 auto;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+.buttons > button{
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #ffffff00;
+    border: white 3px solid;
+}
+
+.about-us-home{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-us-home-tekst{
+    background: #1F1F1F;
+    color: white;
+    height: auto;
+}
+
+
+#about-us-home-tekst > h2{
+    font-size: 72px;
+    padding: 10px;
+}
+
+#about-us-home-tekst > p{
+    padding: 10px;
+}
+
+#about-us-home-deel-2 > img{
+    width: 100%;
+    height: auto;
+}
+.projecten{
+    display: flex;
+    flex-direction: column;
+}
+
+.projecten > h2{
+    text-align: center;
+}
+
+.black{
+    background-color: white;
+    border: black 2px solid;
+    margin: 5px;
+    height: 200px;
+}
+
+
+
+@media only screen and (min-width: 450px){
+    .container1{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./fotos/landingspage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-en-buttons > h1{
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 144px;
+    }
+
+    .text-en-buttons{
+        margin: 0 auto;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .buttons > button{
+        margin: 5px;
+    }
+
+    .about-us-home{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #about-us-home-tekst{
+        background: #1F1F1F;
+        color: white;
+    }
+
+    #about-us-home-tekst > h2{
+        font-size: 72px;
+        padding: 20px;
+    }
+
+    #about-us-home-tekst > p{
+        padding: 20px;
+    }
+
+    #about-us-home-deel-2 > img{
+        height: auto;
+        width: 630px;
+    }
+
+
+    .projecten{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .projecten > h2{
+        text-align: left;
+    }
+    .blackbox{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .black{
+        background-color: white;
+        border: black 2px solid;
+        margin: 5px;
+        width: 33%;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+    .container1{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fotos/landingspage-mobile.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us-home{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-us-home-tekst{
+        background: #1F1F1F;
+        color: white;
+    }
+
+    #about-us-home-tekst > h2{
+        font-size: 72px;
+        padding: 20px;
+    }
+
+    #about-us-home-tekst > p{
+        padding: 20px;
+    }
+
+    #about-us-home-deel-2 > img{
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1450px){
+
+    .container1{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fotos/landingspage-mobile.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us-home{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-us-home-tekst{
+        background: #1F1F1F;
+        color: white;
+    }
+
+    #about-us-home-tekst > h2{
+        font-size: 72px;
+        padding: 20px;
+    }
+
+    #about-us-home-tekst > p{
+        padding: 20px;
+    }
+
+    #about-us-home-deel-2 > img{
+        height: auto;
+        width: 100%;
+    }
+
+}

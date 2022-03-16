@@ -7,6 +7,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+
 
     <!-- Scripts -->
 </head>
@@ -20,9 +22,6 @@
 <main>
     <!-- Als een yield word aangegeven, zoekt het naar een aanpassing in de view pagina, als daar niks gevonden word, vult het niks in-->
     @yield('content')
-    <nav>
-        @yield('nav')
-    </nav>
 </main>
 
 <footer>
