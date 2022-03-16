@@ -6,6 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}" class="text-black hover:text-black">
+
                         <x-application-logo class="block h-10 w-auto fill-current" />
                     </a>
                 </div>
@@ -14,6 +15,15 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard-profile')" :active="request()->routeIs('dashboard-profile')">
+                        {{ __('Profile') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard-todo-overzicht')" :active="request()->routeIs('dashboard-todo-overzicht')">
+                        {{ __('Overzicht') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard-todo-create')" :active="request()->routeIs('dashboard-todo-create')">
+                        {{ __('Nieuwe todo') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -66,6 +76,12 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-nav-link :href="route('dashboard-profile')" :active="request()->routeIs('dashboard-profile')">
+                {{ __('Profile') }}
+            </x-nav-link>
+            <x-nav-link :href="route('dashboard-todo-overzicht')" :active="request()->routeIs('dashboard-todo-overzicht')">
+                {{ __('todoOverzicht') }}
+            </x-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
