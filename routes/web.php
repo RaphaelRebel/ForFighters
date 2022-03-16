@@ -33,4 +33,6 @@ Route::get('/dashboard/todo', [TodoController::class, 'todooverzicht'])->middlew
 Route::get('/dashboard/todo/create', [TodoController::class, 'todocreate'])->middleware(['auth'])->name('dashboard-todo-create');
 
 Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
+
+Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
 require __DIR__.'/auth.php';

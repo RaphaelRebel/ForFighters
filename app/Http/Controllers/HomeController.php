@@ -13,4 +13,7 @@ class HomeController extends Controller
             public function aboutus(){
                 return view('aboutus');
             }
+            public function donate(){
+                return view('donate');
+            }
 }
