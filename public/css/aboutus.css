@@ -1,0 +1,41 @@
+.aboutus-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+
+}
+.aboutus-tekst > h1 {
+    font-size: 55px;
+    background: black;
+    color: white;
+    margin: 0;
+    display: inline;
+    padding: 2px;
+}
+
+.aboutus-tekst > p {
+    margin: 15px 0px;
+}
+
+
+.aboutus-image > img{
+    width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+@media screen and (min-width: 769px) {
+    .aboutus-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 250px;
+    }
+
+    .aboutus-image > img{
+        width: auto;
+        height: auto;
+
+    }
+}
