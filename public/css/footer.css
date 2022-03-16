@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer img{
+    max-width: 10vh;
+    height: auto;
+}
+
+.footer-subjects{
+    color: #f1f1f1;
+}
+
+main{
+    min-height: 100vh;
+}
+.contact-content{
+    padding-top: 2vh;
+}
+.contact-content p{
+    margin: 0;
+    padding-bottom: 9px;
+}
+
+@media only screen and (min-width: 450px) {
+    .footer{
+        display: flex;
+        justify-content:  space-around;
+        padding-top: 9px;
+    }
+    .contact-content{
+        padding: 0;
+    }
+}
