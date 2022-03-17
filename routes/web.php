@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\AboutusController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +32,7 @@ Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middl
 Route::get('/dashboard/todo', [TodoController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
 Route::get('/dashboard/todo/create', [TodoController::class, 'todocreate'])->middleware(['auth'])->name('dashboard-todo-create');
 
+Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
 
-
+Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
 require __DIR__.'/auth.php';
