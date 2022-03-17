@@ -2,6 +2,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+header{
+    position: absolute;
+    width: 90%;
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -47,8 +52,9 @@ body {
 .opening-nav{
     display: flex;
     justify-content: flex-end;
-    float: right;
-    width: 50%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
 
 .flex{

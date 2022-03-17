@@ -16,7 +16,4 @@ class TodoController extends Controller
     return view('dashboard-todo-create');
     }
 
-    public function store(Request $request){
-        dd($request);
-    }
 }

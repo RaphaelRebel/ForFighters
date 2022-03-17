@@ -35,4 +35,6 @@ Route::get('/dashboard/todo/create', [TodoController::class, 'todocreate'])->mid
 Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
 
 Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
+
+Route::get('/projecten', [HomeController::class, 'projecten'])->name('projecten');
 require __DIR__.'/auth.php';
