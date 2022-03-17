@@ -33,3 +33,5 @@ Tot nu toe denken wij nog alleen aan de api. Dit is een manier om informatie te 
 - [Trello](https://trello.com/b/xPD4qlpC/brazilian-jiu-jiutsu)
 
 - [Klantenonderzoek](https://docs.google.com/document/d/1qGaXDOji0wQWNLtChhu53dYZyIqN-spUUS1sJPgUlWU/edit)
+
+- [logboek en eisen](https://docs.google.com/document/d/1xT9hzvh-L7fTLwAfLCsTyIzfHa109ibpedt9vxaJ_OI/edit?usp=sharing)
