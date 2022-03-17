@@ -8,12 +8,18 @@
     <!-- Navigatie dicht doen -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <a href="#" class="donation flex">DONATE</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <x-responsive-nav-link :href="route('donate')" :active="request()->routeIs('donate')">
+            {{ __('Donate') }}
+        </x-responsive-nav-link>
+        <x-responsive-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
+            {{ __('Home') }}
+        </x-responsive-nav-link>
+        <x-responsive-nav-link :href="route('aboutus')" :active="request()->routeIs('aboutus')">
+            {{ __('About us') }}
+        </x-responsive-nav-link>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
-        <a href="#">Vrijwillegers</a>
+        <a href="#">Vrijwilligers</a>
         <div class="flex">
             <a href="#">NL</a>
             <a href="#">EN</a>

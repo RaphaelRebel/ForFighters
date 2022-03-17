@@ -2,7 +2,12 @@
 
 @section('content')
     <div>
-        <div class="container1">
+        <div class="container1" style="
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./fotos/landingspage-mobile.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
             <div class="text-en-buttons">
                 <h1>forfighters</h1>
                 <div class="buttons">
