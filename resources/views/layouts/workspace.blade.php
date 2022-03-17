@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutus.css') }}">
     <link rel="stylesheet" href="{{ asset('css/donate.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/projecten.css') }}">
 
 
     <!-- Scripts -->
