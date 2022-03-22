@@ -4,12 +4,12 @@
             {{ __('Overzicht') }}
         </h2>
     </x-slot>
-    {{ $todos->links() }}
+    {{ $admin->links() }}
     <ol class="slides">
-        @foreach($todos as $todo)
-            <div><h3>{{$todo->title}}</h3> <p>{{$todo->description}}</p></div>
+        @foreach($admin as $admins)
+            <div><h3>{{$admins->title}}</h3> <p>{{$admins->aboutus}}</p></div>
         @endforeach
     </ol>
-    {{ $todos->links() }}
+    {{ $admin->links() }}
 
 </x-app-layout>

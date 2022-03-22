@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\AboutusController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,17 +21,17 @@ use App\Http\Controllers\AboutusController;
 Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
 
 /* Dashboard routes */
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+/*Dashboard doorsturen naar Admin */
+Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth'])->name('dashboard');
 
 Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard-profile');
 
 /*Alle Todos paginas en functies*/
 
-Route::get('/dashboard/todo', [TodoController::class, 'todooverzicht'])->middleware(['auth'])->name('dashboard-todo-overzicht');
-Route::get('/dashboard/todo/create', [TodoController::class, 'todocreate'])->middleware(['auth'])->name('dashboard-todo-create');
+Route::get('/admin/overzicht', [AdminController::class, 'adminoverzicht'])->middleware(['auth'])->name('admin-overzicht');
+Route::get('/admin/create', [AdminController::class, 'admincreate'])->middleware(['auth'])->name('admin-create');
+Route::post('/admin/create', [AdminController::class, 'inputcreation'])->middleware(['auth'])->name('admin-store');
+Route::get('/projects/{id}', [AdminController::class, 'projectsingle'])->middleware(['auth'])->name('project-single');
 
 Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
 

@@ -19,11 +19,11 @@
                     <x-nav-link :href="route('dashboard-profile')" :active="request()->routeIs('dashboard-profile')">
                         {{ __('Profile') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard-todo-overzicht')" :active="request()->routeIs('dashboard-todo-overzicht')">
+                    <x-nav-link :href="route('admin-overzicht')" :active="request()->routeIs('admin-overzicht')">
                         {{ __('Overzicht') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard-todo-create')" :active="request()->routeIs('dashboard-todo-create')">
-                        {{ __('Nieuwe todo') }}
+                    <x-nav-link :href="route('admin-create')" :active="request()->routeIs('admin-create')">
+                        {{ __('Nieuw') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -79,8 +79,8 @@
             <x-nav-link :href="route('dashboard-profile')" :active="request()->routeIs('dashboard-profile')">
                 {{ __('Profile') }}
             </x-nav-link>
-            <x-nav-link :href="route('dashboard-todo-overzicht')" :active="request()->routeIs('dashboard-todo-overzicht')">
-                {{ __('todoOverzicht') }}
+            <x-nav-link :href="route('admin-overzicht')" :active="request()->routeIs('admin-overzicht')">
+                {{ __('admin-overzicht') }}
             </x-nav-link>
         </div>
 
