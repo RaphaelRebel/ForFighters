@@ -7,7 +7,10 @@
     {{ $admin->links() }}
     <ol class="slides">
         @foreach($admin as $admins)
-            <div><h3>{{$admins->title}}</h3> <p>{{$admins->aboutus}}</p></div>
+            <div><h3>{{$admins->title}}</h3> <p>{{$admins->aboutus}}</p>
+
+                <button><a href="/admin/{{$admins->id}}">Read more</a></button>
+            </div>
         @endforeach
     </ol>
     {{ $admin->links() }}

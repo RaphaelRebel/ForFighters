@@ -45,4 +45,35 @@ class AdminController extends Controller
 
                     return 'GEGEVENS IN DE DATABASSE OPSLAAN';
                 }
+
+    public function adminsingle($id){
+        $admins = Admin::find($id);
+        return view ('admin-single', ['admin' => $admins]);
+    }
+
+    public function adminedit($id)
+    {
+        $admins = Admin::find($id);
+
+        return view('admin-edit', ['admin' => $admins]);
+    }
+
+    public function adminupdate(Request $request, $id){
+
+        //Haal alle todos op
+        $admins = Admin::find($id);
+
+        // Haal de update requests
+        $adminTitle = $request->input('title');
+        $adminAboutus = $request->input('aboutus');
+
+        $admins->title = $adminTitle;
+        $admins->aboutus = $adminAboutus;
+
+        $admins->save();
+
+        // Stop de updates in de database (Code kan beter worden)
+
+        return redirect('admin/' . $id)->with('Succes', 'Data updates');
+    }
 }

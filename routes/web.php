@@ -28,9 +28,19 @@ Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middl
 
 /*Alle Todos paginas en functies*/
 
-Route::get('/admin/overzicht', [AdminController::class, 'adminoverzicht'])->middleware(['auth'])->name('admin-overzicht');
-Route::get('/admin/create', [AdminController::class, 'admincreate'])->middleware(['auth'])->name('admin-create');
-Route::post('/admin/create', [AdminController::class, 'inputcreation'])->middleware(['auth'])->name('admin-store');
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
+
+    Route::get('/overzicht', [AdminController::class, 'adminoverzicht'])->name('admin-overzicht');
+
+    Route::get('/create', [AdminController::class, 'admincreate'])->name('admin-create');
+    Route::post('/create', [AdminController::class, 'inputcreation'])->name('admin-store');
+
+    Route::get('/aanpassen/{id}', [AdminController::class, 'adminedit'])->name('admin-edit');
+    Route::post('/admin/opslaan/{id}', [AdminController::class, 'adminupdate'])->name('admin-update');
+    /*Laat de single page van admin zien*/
+    /* Hou deze route onderaan, zodat er niks door de id word gepakt */
+    Route::get('/{id}', [AdminController::class, 'adminsingle'])->name('admin-single');
+});
 Route::get('/projects/{id}', [AdminController::class, 'projectsingle'])->middleware(['auth'])->name('project-single');
 
 Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
