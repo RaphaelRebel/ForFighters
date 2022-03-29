@@ -48,4 +48,6 @@ Route::get('/about-us', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
 
 Route::get('/projecten', [HomeController::class, 'projecten'])->name('projecten');
+
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 require __DIR__.'/auth.php';

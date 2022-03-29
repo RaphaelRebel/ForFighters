@@ -21,4 +21,7 @@ class HomeController extends Controller
             public function projecten(){
                 return view('projecten');
             }
+            public function contact(){
+                return view('contact');
+            }
 }

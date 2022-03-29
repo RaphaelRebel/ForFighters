@@ -1,0 +1,24 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 50px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+    color: white;
+    background-color: #1F1F1F;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 100px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+
+    }
+
+}
