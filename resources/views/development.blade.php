@@ -15,7 +15,7 @@
         <div class="about-us-home">
             <div id="about-us-home-tekst">
                 <h2>{{$admin->title}}</h2>
-                <p>{{$admin->aboutus}}</p>
+                <p>{{$admin->description}}</p>
             </div>
             <div id="about-us-home-deel-2">
                 <img src="./fotos/about-us.png" alt="">
