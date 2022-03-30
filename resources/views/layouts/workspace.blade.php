@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/donate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/projecten.css') }}">
     <link rel="stylesheet" href="{{ asset('css/vrijwilligers.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 
 

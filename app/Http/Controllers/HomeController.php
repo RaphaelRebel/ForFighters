@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 use App\Models\Todo;
+use App\Models\Admin;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
             public function homepage()
             {
-                return view('development');
+            $admins = Admin::find(1);
+                return view('development', ['admin' => $admins]);
             }
             public function aboutus(){
                 return view('aboutus');
@@ -19,7 +21,12 @@ class HomeController extends Controller
             public function projecten(){
                 return view('projecten');
             }
+
             public function vrijwilligers(){
                 return view('vrijwilligers');
+
+            public function contact(){
+                return view('contact');
+
             }
 }

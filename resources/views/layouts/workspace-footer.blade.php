@@ -2,7 +2,9 @@
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 
 <div class="footer">
-    <div><img src="images/forfighterslogo.jpg" alt="Forfighterslogo" /></div>
+    <div class="img-container">
+        <img src="images/forfighterslogo.jpg" alt="Forfighterslogo" />
+    </div>
     <div class="overlay-content">
         <a class="footer-subjects" href="#" class="donation flex">DONATE</a><br>
         <a class="footer-subjects" href="#">Home</a><br>
