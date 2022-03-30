@@ -24,7 +24,7 @@ class HomeController extends Controller
 
             public function vrijwilligers(){
                 return view('vrijwilligers');
-
+            }
             public function contact(){
                 return view('contact');
 
