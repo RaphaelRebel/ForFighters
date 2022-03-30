@@ -61,7 +61,7 @@ body{
     }
     .footer > div > img{
         width: auto;
-        height: 390px;
+        height: 200px;
     }
     .overlay-content{
         display: flex;
@@ -71,5 +71,11 @@ body{
     }
     .donation{
         border: white 3px solid;
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
