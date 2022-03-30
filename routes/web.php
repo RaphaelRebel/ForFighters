@@ -49,5 +49,8 @@ Route::get('/donate', [HomeController::class, 'donate'])->name('donate');
 
 Route::get('/projecten', [HomeController::class, 'projecten'])->name('projecten');
 
+Route::get('/vrijwilligers', [HomeController::class, 'vrijwilligers'])->name('vrijwilligers');
+
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+
 require __DIR__.'/auth.php';

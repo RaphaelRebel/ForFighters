@@ -1,0 +1,63 @@
+.form-formulier{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.form-formulier > form > input{
+    width: 200px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #1F1F1F;
+    color: black;
+    height: 40px;
+    margin: 20px;
+}
+
+.form-formulier > form > textarea{
+    width: 200px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #1F1F1F;
+    color: black;
+    height: 40px;
+    margin: 20px;
+    resize:none;
+}
+
+.form-formulier > form > label{
+    margin: 20px;
+}
+
+.submit:hover  {
+    background-color: gray;
+}
+@media screen and (min-width: 769px) {
+    .form-formulier > form > textarea{
+        width: 350px;
+        background: transparent;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #1F1F1F;
+        color: black;
+        height: 40px;
+        margin: 20px;
+        resize:none;
+    }
+    .form-formulier > form > input{
+        width: 250px;
+        background: transparent;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #1F1F1F;
+        color: black;
+        height: 40px;
+        margin: 20px;
+    }
+}
