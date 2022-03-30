@@ -13,7 +13,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
+        <link rel="stylesheet" href="{{ asset('css/single.css') }}">
         <link rel="stylesheet" href="{{ asset('css/overzicht.css') }}">
 
         <!-- Scripts -->
