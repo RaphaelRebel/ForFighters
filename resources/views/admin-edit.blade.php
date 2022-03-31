@@ -19,9 +19,9 @@
 
                     <!-- Name -->
                     <div>
-                        <x-label for="aboutus" value="{{$admin->aboutus}}"/>
+                        <x-label for="description" value="{{$admin->description}}"/>
 
-                        <x-input id="aboutus" class="block h-20 mt-1 w-full" type="text" name="aboutus" :value="old('aboutus')" required autofocus/>
+                        <x-input id="description" class="block h-20 mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus/>
                     </div>
 
                     <div class="flex items-center justify-end mt-4">

@@ -65,10 +65,10 @@ class AdminController extends Controller
 
         // Haal de update requests
         $adminTitle = $request->input('title');
-        $adminAboutus = $request->input('aboutus');
+        $adminDescription = $request->input('description');
 
         $admins->title = $adminTitle;
-        $admins->aboutus = $adminAboutus;
+        $admins->description = $adminDescription;
 
         $admins->save();
 
