@@ -24,11 +24,12 @@
 
 .projecten-tekst{
     padding: 15px;
+    margin: 40px;
 }
 
 hr{
     color: black;
-    border-top: 2px black solid;
+    border-top: 2px black dashed;
     width: 90%;
 }
 @media screen and (min-width: 769px) {
