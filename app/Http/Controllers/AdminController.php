@@ -63,12 +63,24 @@ class AdminController extends Controller
         //Haal alle todos op
         $admins = Admin::find($id);
 
+        $admindata = $request->validate([
+            'title' => 'required|min:3',
+            'description' => 'required|min:10',
+            'afbeelding' => 'image'
+        ]);
+
+        $newFilename = $admindata['afbeelding']->store('fotos', 'public');
+        $admindata['afbeelding'] = $newFilename;
+
+
         // Haal de update requests
-        $adminTitle = $request->input('title');
-        $adminDescription = $request->input('description');
+        $adminTitle = $admindata['title'];
+        $adminDescription = $admindata['description'];
+        $adminAfbeelding = $admindata['afbeelding'];
 
         $admins->title = $adminTitle;
         $admins->description = $adminDescription;
+        $admins->afbeelding = $adminAfbeelding;
 
         $admins->save();
 
