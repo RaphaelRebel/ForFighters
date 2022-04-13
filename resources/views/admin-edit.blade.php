@@ -6,7 +6,7 @@
         <x-slot name="slot">
             <div class="single-container">
 
-                <form method="POST" action="{{ route('admin-update', $admin->id)}}">
+                <form method="POST" action="{{ route('admin-update', $admin->id)}}" enctype="multipart/form-data">
                     @csrf
 
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
@@ -19,9 +19,15 @@
 
                     <!-- Name -->
                     <div>
-                        <x-label for="aboutus" value="{{$admin->aboutus}}"/>
+                        <x-label for="description" value="{{$admin->description}}"/>
 
-                        <x-input id="aboutus" class="block h-20 mt-1 w-full" type="text" name="aboutus" :value="old('aboutus')" required autofocus/>
+                        <x-input id="description" class="block h-20 mt-1 w-full" type="text" name="description" :value="old('description')" required autofocus/>
+                    </div>
+
+                    <div>
+                        <x-label for="afbeelding" value="Foto"/>
+
+                        <x-input id="afbeelding" class="block h-20 mt-1 w-full" type="file" name="afbeelding"  required autofocus/>
                     </div>
 
                     <div class="flex items-center justify-end mt-4">

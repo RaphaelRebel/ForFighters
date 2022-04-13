@@ -11,7 +11,7 @@
     <div class="single-container ">
         <h2>{{$admin->title}}</h2>
         <p style="font-size: 12px">{{$admin->created_at}}</p>
-        <p>{{$admin->aboutus}}</p>
+        <p>{{$admin->description}}</p>
         <a href="aanpassen/{{$admin->id}}/">Pas kolom aan</a>
     </div>
 </x-app-layout>

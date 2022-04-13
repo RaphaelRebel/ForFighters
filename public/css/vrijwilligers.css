@@ -2,6 +2,18 @@
     display: flex;
     justify-content: center;
     margin: 100px;
+
+}
+
+.form-div > h2{
+    text-align: center;
+    margin: 140px 50px 50px 50px;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-formulier > form > input{

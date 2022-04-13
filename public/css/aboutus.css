@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 15px;
-
+    margin-top: 200px;
 }
 .aboutus-tekst > h1 {
     font-size: 55px;
@@ -12,17 +12,18 @@
     margin: 0;
     display: inline;
     padding: 2px;
+    margin: 15px;
 }
 
 .aboutus-tekst > p {
-    margin: 15px 0px;
+    margin: 15px;
 }
 
 
 .aboutus-image > img{
     width: 100%;
     height: auto;
-    margin: 15px;
+    margin: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -34,7 +35,37 @@
     }
 
     .aboutus-image > img{
-        width: auto;
+        width: 500px;
+        height: auto;
+
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .aboutus-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 150px;
+    }
+
+    .aboutus-image > img{
+        width: 500px;
+        height: auto;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .aboutus-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 150px;
+    }
+
+    .aboutus-image > img{
+        width: 500px;
         height: auto;
 
     }

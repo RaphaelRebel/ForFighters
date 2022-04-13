@@ -9,8 +9,8 @@
             </div>
         </div>
         <div class="donate-tekst">
-            <h1>help mensen om te trainen</h1>
-            <h3>Help mensen in derdewereldlandenlanden om normaal te kunnen trainen</h3>
+            <h1>{{$donatie->title}}</h1>
+            <h3>{{$donatie->description}}</h3>
         </div>
     </div>
 

@@ -17,9 +17,15 @@
         <x-responsive-nav-link :href="route('aboutus')" :active="request()->routeIs('aboutus')">
             {{ __('About us') }}
         </x-responsive-nav-link>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">Vrijwilligers</a>
+        <x-responsive-nav-link :href="route('projecten')" :active="request()->routeIs('projecten')">
+            {{ __('Projecten') }}
+        </x-responsive-nav-link>
+        <x-responsive-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+            {{ __('Contact') }}
+        </x-responsive-nav-link>
+        <x-responsive-nav-link :href="route('vrijwilligers')" :active="request()->routeIs('vrijwilligers')">
+            {{ __('Vrijwilligers') }}
+        </x-responsive-nav-link>
         <div class="flex">
             <a href="#">NL</a>
             <a href="#">EN</a>

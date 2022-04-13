@@ -61,6 +61,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: #1F1F1F;
 }
 
 #about-us-home-tekst{
@@ -82,6 +83,10 @@ body{
 #about-us-home-deel-2 > img{
     width: 100%;
     height: auto;
+}
+
+#about-us-home-deel-2{
+    margin: auto;
 }
 .projecten{
     display: flex;
@@ -243,7 +248,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 1450px){
+@media only screen and (max-width: 1180px){
 
     .container1{
         width: 100%;

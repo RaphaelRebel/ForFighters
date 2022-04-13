@@ -9,14 +9,17 @@ class HomeController extends Controller
 {
             public function homepage()
             {
-            $admins = Admin::find(1);
+            $admins = Admin::where('code', 'aboutus')->first();
                 return view('development', ['admin' => $admins]);
             }
             public function aboutus(){
-                return view('aboutus');
+                $admins = Admin::where('code', 'aboutus')->first();
+                return view('aboutus', ['admin' => $admins]);
             }
             public function donate(){
-                return view('donate');
+
+                $donation = Admin::where('code', 'donation')->first();
+                return view('donate', ['donatie' => $donation]);
             }
             public function projecten(){
                 return view('projecten');
@@ -24,7 +27,7 @@ class HomeController extends Controller
 
             public function vrijwilligers(){
                 return view('vrijwilligers');
-
+            }
             public function contact(){
                 return view('contact');
 
