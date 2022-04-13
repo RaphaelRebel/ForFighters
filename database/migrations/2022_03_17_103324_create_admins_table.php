@@ -18,6 +18,7 @@ class CreateAdminsTable extends Migration
             $table->timestamps();
             $table->string('title')->nullable();
             $table->text('description')->nullable();
+            $table->string('afbeelding')->nullable();
             $table->string('code')->unique();
         });
     }

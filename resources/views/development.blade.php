@@ -18,7 +18,7 @@
                 <p>{{$admin->description}}</p>
             </div>
             <div id="about-us-home-deel-2">
-                <img src="./fotos/about-us.png" alt="">
+                <img src="storage/{{$admin->afbeelding}}" alt="">
             </div>
         </div>
 
