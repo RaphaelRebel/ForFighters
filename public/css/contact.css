@@ -11,7 +11,33 @@
     background-position: center;
     background-size: cover;
     color: white;
+
 }
+
+
+.h3-group{
+    margin: auto;
+}
+
+.h3-contact{
+    background-color: #1F1F1F;
+    display: inline-flex;
+    text-align: center;
+    margin: 20px 6px ;
+    padding: 10px;
+}
+
+.h3-onder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.h3-contact-ul{
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .contact-container{
         /*flex-direction: row;*/
@@ -22,6 +48,11 @@
         background-position: center;
         background-size: cover;
 
+    }
+    .h3-onder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
