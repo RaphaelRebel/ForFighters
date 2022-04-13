@@ -20,12 +20,16 @@
             <div id="about-us-home-deel-2">
                 <img src="storage/{{$admin->afbeelding}}" alt="">
             </div>
+
         </div>
 
         <div class="projecten">
-            <h2>projecten</h2>
+            <h2>Projecten</h2>
             <div class="blackbox">
-                <div class="black"></div>
+                <div class="black">
+
+                    <h3>Title</h3>
+                </div>
                 <div class="black"></div>
                 <div class="black"></div>
             </div>
