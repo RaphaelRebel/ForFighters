@@ -16,6 +16,11 @@
     color: white;
 }
 
+.projecten-tekst-en-foto{
+    background: #f1f1f1;
+    padding: 9px;
+}
+
 .projecten-tekst-en-foto > img{
     width: 100%;
     height: auto;

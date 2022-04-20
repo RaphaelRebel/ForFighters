@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 use App\Models\Todo;
 use App\Models\Admin;
+use App\Models\Projects;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
             public function homepage()
             {
+            $projecten = Projects::paginate(3);
             $admins = Admin::where('code', 'aboutus')->first();
-                return view('development', ['admin' => $admins]);
+                return view('development', ['admin' => $admins, 'projecten' => $projecten]);
             }
             public function aboutus(){
                 $admins = Admin::where('code', 'aboutus')->first();
@@ -22,7 +24,8 @@ class HomeController extends Controller
                 return view('donate', ['donatie' => $donation]);
             }
             public function projecten(){
-                return view('projecten');
+                $project = Projects::paginate(10);
+                return view('projecten', ['project' => $project]);
             }
 
             public function vrijwilligers(){

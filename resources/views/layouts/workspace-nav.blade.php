@@ -34,4 +34,4 @@
 </div>
 <!-- Opening navigatie -->
 <img class="logo" src="{{URL::asset('images/forfighterslogo.jpg')}}" alt="Forfighterslogo" />
-<span style="font-size:30px;cursor:pointer" onclick="openNav()" class="opening-nav">&#9776; </span>
+<span style="font-size:30px;cursor:pointer; color: #f1f1f1;" onclick="openNav()" class="opening-nav">&#9776; </span>

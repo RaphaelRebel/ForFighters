@@ -26,10 +26,12 @@
         <div class="projecten">
             <h2>Projecten</h2>
             <div class="blackbox">
+                @foreach($projecten as $project)
                 <div class="black">
 
-                    <h3>Title</h3>
+                    <h3>{{$project->title}}</h3>
                 </div>
+                @endforeach
                 <div class="black"></div>
                 <div class="black"></div>
             </div>

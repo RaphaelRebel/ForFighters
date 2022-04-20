@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProjectsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,14 +27,15 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(
 
 Route::get('/dashboard/profile', [DashboardController::class, 'profile'])->middleware(['auth'])->name('dashboard-profile');
 
-/*Alle Todos paginas en functies*/
+/*Alle Admin paginas en functies*/
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
 
     Route::get('/overzicht', [AdminController::class, 'adminoverzicht'])->name('admin-overzicht');
 
+    // Project toevoegen (in de admin)
     Route::get('/create', [AdminController::class, 'admincreate'])->name('admin-create');
-    Route::post('/create', [AdminController::class, 'inputcreation'])->name('admin-store');
+    Route::post('/create', [ProjectsController::class, 'inputcreation'])->name('project-store');
 
     Route::get('/aanpassen/{id}', [AdminController::class, 'adminedit'])->name('admin-edit');
     Route::post('/admin/opslaan/{id}', [AdminController::class, 'adminupdate'])->name('admin-update');
