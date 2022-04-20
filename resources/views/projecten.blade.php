@@ -5,7 +5,7 @@
             <h1>Projecten</h1>
         </div>
 @foreach($project as $projecten)
-        <div class="projecten-tekst-en-foto">
+        <div class="projecten-tekst-en-foto" id="project-{{$projecten->id}}">
 
             <div class="projecten-tekst">
                 <h1>{{$projecten->title}}</h1>

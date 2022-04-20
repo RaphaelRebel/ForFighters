@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
             public function homepage()
             {
-            $projecten = Projects::paginate(3);
+            $projecten = Projects::orderBy('created_at', 'desc')->paginate(3);
             $admins = Admin::where('code', 'aboutus')->first();
                 return view('development', ['admin' => $admins, 'projecten' => $projecten]);
             }
@@ -24,7 +24,7 @@ class HomeController extends Controller
                 return view('donate', ['donatie' => $donation]);
             }
             public function projecten(){
-                $project = Projects::paginate(10);
+                $project = Projects::orderBy('created_at', 'desc')->paginate(10);
                 return view('projecten', ['project' => $project]);
             }
 
