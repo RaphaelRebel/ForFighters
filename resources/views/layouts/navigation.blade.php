@@ -23,7 +23,7 @@
                         {{ __('Overzicht') }}
                     </x-nav-link>
                     <x-nav-link :href="route('admin-create')" :active="request()->routeIs('admin-create')">
-                        {{ __('Nieuw') }}
+                        {{ __('Nieuw project') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -4,31 +4,24 @@
         <div class="projecten-header">
             <h1>Projecten</h1>
         </div>
-
-        <div class="projecten-tekst-en-foto">
-
-            <div class="projecten-tekst">
-                <h1>project</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum</p>
-            </div>
-            <img src="/fotos/projecten.png" alt="">
-
-        </div>
-        <hr>
-
-        <div class="projecten-tekst-en-foto">
+@foreach($project as $projecten)
+        <div class="projecten-tekst-en-foto" id="project-{{$projecten->id}}">
 
             <div class="projecten-tekst">
-                <h1>project</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum</p>
+                <h1>{{$projecten->title}}</h1>
+                <p>{{$projecten->description_1}}</p>
+                @if( ! $projecten->desciption_2)
+                    <p>{{$projecten->description_2}}</p>
+                    @endif
+                @if( ! $projecten->desciption_3)
+                    <p>{{$projecten->description_3}}</p>
+                @endif
             </div>
-            <img src="/fotos/projecten.png" alt="">
+            <img src="{{asset('storage/'. $projecten->afbeelding)}}" alt="Projecten afbeelding">
 
         </div>
         <hr>
     </div>
 
-
+    @endforeach
 @Stop

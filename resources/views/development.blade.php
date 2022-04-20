@@ -26,12 +26,16 @@
         <div class="projecten">
             <h2>Projecten</h2>
             <div class="blackbox">
+                @foreach($projecten as $project)
+                    <div class="gray">
                 <div class="black">
+                    <img src="storage/{{$project->afbeelding}}" alt="Projecten foto">
 
-                    <h3>Title</h3>
                 </div>
-                <div class="black"></div>
-                <div class="black"></div>
+                        <h3>{{$project->title}}</h3>
+                        <button><a href="{{Route('projecten')}}#project-{{$project->id}}">Lees meer!</a></button>
+                    </div>
+                @endforeach
             </div>
 
         </div>
