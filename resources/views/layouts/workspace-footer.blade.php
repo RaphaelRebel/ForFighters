@@ -6,7 +6,7 @@
         <img src="images/forfighterslogo.jpg" alt="Forfighterslogo" />
     </div>
     <div class="overlay-content">
-        <a class="footer-subjects" href="#" class="donation flex">DONATE</a><br>
+        <a class="footer-subjects" href="#" class="flex"><span class="donation">DONATE</span></a><br>
         <a class="footer-subjects" href="#">Home</a><br>
         <a class="footer-subjects" href="#">About</a><br>
         <a class="footer-subjects" href="#">Projects</a><br>

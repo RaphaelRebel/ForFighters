@@ -6,7 +6,7 @@
             <div class="text-en-buttons">
                 <h1>forfighters</h1>
                 <div class="buttons">
-                    <button><h3>About Us</h3></button><button><h3>Donate</h3></button><button><h3>Join Us</h3></button>
+                    <button><h3>ABOUT US</h3></button><button><h3>DONATE</h3></button><button><h3>JOIN US</h3></button>
                 </div>
 
             </div>

@@ -13,7 +13,10 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.donation{
+    border: white 3px solid;
+    padding: 7px;
+}
 
 
 .footer-subjects{
