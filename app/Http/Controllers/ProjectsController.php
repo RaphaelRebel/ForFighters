@@ -36,6 +36,6 @@ class ProjectsController extends Controller
         //Hier alle gegevens opslaan die je krijgt van admin-create
 
 
-        return view('projecten');
+        return redirect('/projecten');
     }
 }

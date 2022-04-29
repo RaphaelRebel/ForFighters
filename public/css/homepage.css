@@ -59,6 +59,7 @@ body{
 
 .about-us-home{
     margin: 0;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,10 +86,12 @@ body{
 #about-us-home-deel-2 > img{
     width: 100%;
     height: auto;
+    max-height: 400px;
 }
 
 #about-us-home-deel-2{
     margin: auto;
+    height: auto;
 }
 .projecten{
     display: flex;
